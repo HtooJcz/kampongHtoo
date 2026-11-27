@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f8eee5" />
+    <title>Kampong Crate | About & Contact</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="page-header" id="home">
+      <nav class="site-nav" aria-label="Main navigation">
+        <a class="brand" href="#home">Kampong <span>Crate</span></a>
+        <div class="nav-links">
+          <a href="#about">About Us</a>
+          <a href="#highlights">What We Offer</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about" class="feature-card" aria-labelledby="about-title">
+        <div class="about-copy">
+          <p class="eyebrow">A Singapore online marketplace</p>
+          <h1 id="about-title">Bringing kampong spirit to your doorstep</h1>
+          <p class="intro">
+            Kampong Crate connects small local makers, crafters, and food
+            creators with everyday shoppers across Singapore.
+          </p>
+          <p>
+            Founded with a passion for community, our goal is to preserve the
+            warmth of local neighborhood sharing in a modern digital space.
+            Every crate features handpicked goods made right here at home.
+          </p>
+        </div>
+
+        <img
+          class="hero-image"
+          src="https://uploads.onecompiler.io/458ucnd48/458ukhpb6/0x0.webp"
+          alt="A curated gift box containing handcrafted goods and snacks from local Singaporean artisans."
+          width="600"
+          height="400"
+        />
+
+        <section
+          id="highlights"
+          class="takeaways"
+          aria-labelledby="takeaways-title"
+        >
+          <p class="eyebrow">Made with our community in mind</p>
+          <h2 id="takeaways-title">Why shop with us?</h2>
+          <ul>
+            <li>Support local Singaporean small businesses and artisans.</li>
+            <li>Eco-friendly packaging delivered right to your home.</li>
+            <li>Curated seasonal crates packed with unique finds.</li>
+          </ul>
+        </section>
+      </section>
+
+      <section
+        id="contact"
+        class="contact-card"
+        aria-labelledby="contact-title"
+      >
+        <div class="contact-intro">
+          <p class="eyebrow">We’d love to hear from you</p>
+          <h2 id="contact-title">Get in touch</h2>
+          <p class="subtitle">
+            Have a question about our local farm crates? Fill out the form below
+            and we’ll get back to you.
+          </p>
+          <p class="email-note">
+            Prefer email?
+            <a href="mailto:hello@kampongcrate.sg">hello@kampongcrate.sg</a>
+          </p>
+        </div>
+
+        <form
+          action="mailto:hello@kampongcrate.sg"
+          method="post"
+          enctype="text/plain"
+        >
+          <div class="form-field">
+            <label for="name"
+              >Full Name <span aria-hidden="true">*</span></label
+            >
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="e.g. Htoo"
+              autocomplete="name"
+              required
+            />
+          </div>
+
+          <div class="form-field">
+            <label for="email"
+              >Email Address <span aria-hidden="true">*</span></label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Htoo@example.com"
+              autocomplete="email"
+              required
+            />
+          </div>
+
+          <div class="form-field">
+            <label for="phone"
+              >Phone Number <span class="optional">(optional)</span></label
+            >
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="e.g. +65 9123 4567"
+              autocomplete="tel"
+            />
+          </div>
+
+          <div class="form-field">
+            <label for="enquiry-type"
+              >Enquiry Type <span aria-hidden="true">*</span></label
+            >
+            <select id="enquiry-type" name="enquiry_type" required>
+              <option value="" disabled selected>
+                Select an enquiry type...
+              </option>
+              <option value="crate-orders">
+                Crate Orders &amp; Subscriptions
+              </option>
+              <option value="delivery">Delivery &amp; Pickup</option>
+              <option value="farm-partners">Local Farm Partnerships</option>
+              <option value="general">General Question</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="message"
+              >Message <span aria-hidden="true">*</span></label
+            >
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Tell us how we can help..."
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit">
+            Send Message <span aria-hidden="true">→</span>
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Made with care in Singapore.</p>
+      <p>&copy; 2026 Kampong Crate. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

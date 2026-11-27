@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kampong Crate - Product Media</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="media-section">
+      <h2>Kampong Crate Product Showcase</h2>
+
+      <div class="content-wrapper">
+        <!-- Step 1 & 2: Embedded video with controls, poster, and fallback message -->
+        <div class="video-container">
+          <video controls poster="box.png" width="420">
+            <source src="Htoo.mp4" type="video/mp4" />
+            <!-- Fallback message for unsupported browsers -->
+            Your browser does not support the video tag.
+            <a href="Htoo.mp4">Download the video here</a>.
+          </video>
+        </div>
+
+        <!-- Step 3: Inline SVG icon next to the video -->
+        <div class="icon-container">
+          <svg
+            class="styled-svg"
+            viewBox="0 0 24 24"
+            width="64"
+            height="64"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+              fill="none"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <span class="icon-label">Quality Assured</span>
+        </div>
+      </div>
+
+      <!-- Step 4: Discussion & Justification Note -->
+      <section class="discussion-note">
+        <h3>Step 4: SVG vs. Canvas Discussion Note</h3>
+        <p>
+          <strong>Would this SVG icon be better as a canvas instead?</strong>
+        </p>
+        <p>
+          <em>No, SVG is a much better choice for this icon. Here is why:</em>
+        </p>
+        <ul>
+          <li>
+            <strong>Scalability & Crispness:</strong> SVG is vector-based,
+            meaning it scales infinitely to any screen resolution (Retina
+            displays, mobile, desktop) without losing sharpness or becoming
+            pixelated. Canvas is raster-based and can look blurry when scaled.
+          </li>
+          <li>
+            <strong>CSS Styling:</strong> SVGs allow direct styling via CSS
+            (such as changing `fill` or `stroke` colors dynamically on hover or
+            theme changes), whereas a Canvas requires complex JavaScript pixel
+            manipulation.
+          </li>
+          <li>
+            <strong>Accessibility & SEO:</strong> SVGs are text-based XML
+            elements, making them indexable by search engines and readable by
+            screen readers for accessibility. Canvas contents are invisible to
+            screen readers.
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
